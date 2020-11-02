@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+/* html,body */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color:gray;
+}
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* HEADER */
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 2em;
+    font-family: fantasy;
+    color: rgb(46, 45, 45);
+    text-align: center;
+    line-height: 80px;
+}
+
+.header-logo img{
+    height: 40px;
+}
+
+.header-logo p img{
+    height: 23px;
+}
+
+/* liste */
+nav{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(104, 103, 103);
+    background-color: rgb(129, 244, 255);
+}
+
+.header-liste{
+    display: flex;
+    justify-content: center;
+    color: rgb(241, 183, 107);
+    list-style-type: none;
+    line-height: 50px;
+    font-size: 25px;    
+}
+
+.liste a{
+    text-decoration: none;
+    color: rgb(241, 183, 107);
+}
+
+
+.liste{
+    cursor: pointer;
+    margin: 0 40px;
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+}
+
+.liste:hover{
+    background-color: rgb(54, 237, 253);
+    transition: 0.5s;
+}
+
+
+
+.liste span{
+    font-size: 14px;
+}
+
+
+/* SOUS-LISTE */
+
+.header-sous-liste{
+    margin-top: -6px;
+    display: none;
+}
+
+.sous-liste {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 10px;
+    background-color: rgb(129, 244, 255);
+    height: 49px;  
+    position: relative; 
+}
+
+
+
+.sous-liste span{
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+}
+
+.sous-liste:hover{
+    background-color: rgb(54, 237, 253);
+    transition: 0.5s;
+}
+
+
+.sous-liste:hover span{
+    display: inline;
+}
+
+.liste:hover > ul{
+    display: block;
+}
+
+/* SOUS-SOUS-LISTE (2) */
+
+.header-sous-liste2{
+    position: relative;
+    top: -50px;
+    left: 190px;
+    background-color: rgb(129, 244, 255);
+    list-style-type: none;
+    display: none;
+}
+
+.sous-liste2{
+    text-align: center;
+    padding: 0 10px;
+    
+    
+} 
+.sous-liste2 a{
+    text-decoration: none;
+    color: rgb(241, 183, 107)
+      
+}
+
+.sous-liste2:hover{
+    background-color: rgb(54, 237, 253);
+    transition: 0.5s;
+    
+}
+
+.liste > ul > .sous-liste:hover > ul{
+    display: block;
+    
+}
+/* fin de la liste */
+/* FIN HEADER */
+
+
+/* main */
+
+.main-top-jap{
+    background-image: url(../image/photo-jap.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-corps-jap {
+    font-family: 'Courgette', cursive;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid #576490;
+    border-right: 1px solid #576490;
+    z-index: 1;
+}
+
+/* h1 */
+
+h1{
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 5px 5px black;
+    text-align: center;
+    display: block;
+    font-size: 3em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h1:hover {
+    animation-name:pulse;
+    animation-duration: 0.3s;
+}
+
+/* h2 */
+
+h2 {
+    font-family: 'Merienda', cursive;
+    margin: 2rem 0 0.5rem 1rem;
+}
+
+h2:hover {
+    text-shadow: 1px 1px 2px burlywood;
+}
+
+.h2_autres_NZ {
+    margin: 2rem 0 2rem 0;
+}
+
+/* activite */
+
+.activite-figure-jap:hover .activite-figcaption-jap {
+    opacity: 0.8;
+}
+
+.activite-figure-jap:hover {
+    transform: scale(1.05);
+}
+
+.activites-jap{
+    width: 75%;
+    background-color: rgba(224, 225, 249, 0.5);
+}
+
+.activite-jap {
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.activite-jap p {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.activite-jap{
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.activite-figure-jap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    width: 50%;
+    align-self: center;
+    transition: transform ease-in-out 0.1s;
+}
+
+.activite-figure-jap img{
+    width: 60%;
+    box-shadow: 0 0 1px 3px #0D2144;
+}
+
+.activite-figcaption-jap{
+    position: absolute;
+    opacity:0;
+    left: 1;
+    right: 1;
+    top: 0;
+    bottom: 0;
+    background-color:burlywood;
+    transition: all ease-in-out 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #1F2432;
+    width: 60%;
+}
+
+/* autres */
+
+.autres-jap {
+    width: 25%;
+    background-color: rgba(85, 89, 153, 0.5);
+}
+
+.autres-jap h2 {
+    text-align: center;
+}
+
+/* demographie */
+
+.demographie-jap ul {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+}
+
+.demographie-jap li {
+    margin: 0.5rem 1rem 0.5rem 2rem;
+    border-radius: 10px;
+    transition: all ease-in-out 0.05s;
+}
+
+.demographie-jap li:hover .fa-leaf {
+    color: #3FE0BE;
+    transition: all ease-in-out 0.005s;
+}
+
+.demographie-jap li:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.gallerie-jap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.figure-gallerie-jap {
+    margin: 0 1rem 2rem 1rem;
+}
+
+.figure-gallerie-jap {
+    position: relative;
+    display: flex;
+}
+
+/* figure */
+
+.figure-gallerie-jap img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px grey;
+    transition: all ease-in-out 0.1s;
+}
+
+.figure-gallerie-jap figcaption {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: all ease-in-out 0.1s;
+    border-radius: 10px;
+}
+
+.figure-gallerie-jap:hover img {
+    transform: scale(1.05);
+}
+
+.figure-gallerie-jap:hover .gallerie-figcaption-jap {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+/* hr */
+
+.hr-activites-jap {
+    margin: 2rem auto 1rem auto;
+    width: 90%;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(85, 89, 153, 0.9), rgba(255, 255, 255, 0));
+}
+
+/*animation*/
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+
+@media (max-width: 799px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin: 0.5rem 0 0.5rem 0;
+        text-align: center;
+    }
+
+    .main-corps-jap {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .activites-jap {
+        width: 100%;
+    }
+
+    .Autres-jap{
+        width: 100%;
+    }
+
+    .demographie-jap {
+        text-align: center;
+    }
+
+    .gallerie-jap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .figure-gallerie-jap {
+        min-width: 130px;
+        width: 20%;
+    }
+}
+@media (max-width:399px) {
+  .titre-jap h1{
+    font-size: 15px;
+  }
+  .activite-jap{
+    margin: 0;
+    text-align: center;
+  }
+  .activite-figure-jap{
+    width: 95%;
+  }
+  .demographie-jap li {
+    margin: 0;
+    font-size:10px;
+  }
+  .figure-gallerie-jap{
+    margin: 0 0 0.2rem 0;;
+  }
+}

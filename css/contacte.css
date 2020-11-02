@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+}
+main{
+    background-color:#49A8B2 ;
+    
+}
+label{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:white;
+  
+    
+    
+}
+.form{
+    text-align: center;
+    
+  
+  
+  }
+  .diform{
+      margin-top: 2%;
+  }
+  input{
+      margin-top: 1%;
+    height: 3vh;
+    border: solid gray 1px;
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 10px 5px 5px black;
+    width: 30%;
+ }
+ .subm{
+     border: solid white #0D9ECA 2px;
+     background-color:#0D9ECA ;
+     color:white;
+     width: 20%;
+    padding: 1%;
+     text-align: center;
+     line-height: 1vh;
+ }
+ .subme{
+     font-family:'Open Sans Condensed', sans-serif;
+     font-size: 20px;
+     
+     
+ }
+ .mess{
+     display: flex;
+     align-items: center;
+    justify-content: center;
+}
+.messa{
+    box-shadow: 10px 5px 5px black;
+    
+
+}
+textarea{
+    width: 50%;
+    
+}
+legend{
+    font-size: 40px;
+}

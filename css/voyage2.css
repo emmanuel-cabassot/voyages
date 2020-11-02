@@ -1,0 +1,277 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 2em;
+    color: rgb(46, 45, 45);
+    text-align: center;
+    line-height: 80px;
+}
+
+.header-logo img{
+    height: 40px;
+}
+
+.header-logo p{
+    font-family: fantasy;
+}
+
+.header-logo p img{
+    height: 23px;
+}
+
+/* liste */
+nav{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(104, 103, 103);
+    background-color: rgb(129, 244, 255);
+}
+
+.header-liste{
+    display: flex;
+    justify-content: center;
+    color: rgb(241, 183, 107);
+    list-style-type: none;
+    line-height: 50px;
+    font-size: 25px;    
+}
+
+.liste a{
+    text-decoration: none;
+    color: rgb(241, 183, 107);
+}
+
+
+.liste{
+    cursor: pointer;
+    margin: 0 40px;
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+}
+
+.liste:hover{
+    background-color: rgb(54, 237, 253);
+    transition: 0.5s;
+}
+
+
+
+.liste span{
+    font-size: 14px;
+}
+
+
+/* SOUS-LISTE */
+
+.header-sous-liste{
+    margin-top: -3px;
+    display: none;
+}
+
+.sous-liste {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 10px;
+    background-color: rgb(129, 244, 255);
+    height: 49px;  
+    position: relative; 
+}
+
+
+
+.sous-liste span{
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+}
+
+.sous-liste:hover{
+    background-color: rgb(54, 237, 253);
+    transition: 0.5s;
+}
+
+
+.sous-liste:hover span{
+    display: inline;
+}
+
+.liste:hover > ul{
+    display: block;
+}
+
+/* SOUS-SOUS-LISTE (2) */
+
+.header-sous-liste2{
+    position: relative;
+    top: -50px;
+    left: 190px;
+    background-color: rgb(129, 244, 255);
+    list-style-type: none;
+    display: none;
+}
+
+.sous-liste2{
+    text-align: center;
+    padding: 0 10px;
+    
+    
+} 
+.sous-liste2 a{
+    text-decoration: none;
+    color: rgb(241, 183, 107)
+      
+}
+
+.sous-liste2:hover{
+    background-color: rgb(54, 237, 253);
+    transition: 0.5s;
+    
+}
+
+.liste > ul > .sous-liste:hover > ul{
+    display: block;
+    
+}
+/* fin de la liste */
+/* FIN HEADER */
+
+.img{
+    background-image:url("../image/temple.jpg");
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.titre1{
+    color: cadetblue;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+}
+p{
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 2em;
+    width: 80%;
+    margin: auto;
+}
+.titre02{
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.img1{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.intro{
+    line-height: 2em;
+}
+.img01{
+    width: 20%;
+    margin: 2%;
+}
+.img02{
+    display: flex;
+    justify-content: center;
+}
+.img2{
+    width: 20%;
+    margin: 2%;
+    margin: auto;
+   
+}
+.volcan{
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 5%;
+    
+   
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.pers{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+.img03{
+    display: block;
+    justify-content: center;
+}
+.img03 img{
+    width: 30%;
+    margin: auto;
+    padding: 1%;
+   
+}
+.guattee{
+    width: 100%;
+    margin: auto;
+}
+.guatte{
+    width: 100%;
+}
+.rand{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.ip{
+    display: flex;
+    justify-content: center;
+   
+     }
+   
+.ip div img{
+    width: 20%;
+    margin: auto;
+    
+    
+
+}
+.ip div{
+    text-align: center;
+}
+.livre{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.livre div img{
+    width: 20%;
+    
+}
+.reci{
+    display: block;
+    text-align: center;
+    background-color: #F8F8F8;
+    
+}
+
+
+
+
+  
+
+
+
+
+
+
+
