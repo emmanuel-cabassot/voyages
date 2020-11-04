@@ -1,8 +1,148 @@
-*{
-    margin: 0%;
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+/* HEADER */
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 2em;
+    font-family: fantasy;
+    color: rgb(46, 45, 45);
+    text-align: center;
+    line-height: 80px;
+}
+
+.header-logo img{
+    height: 40px;
+}
+
+.header-logo p img{
+    height: 23px;
+}
+
+/* liste */
+nav{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(104, 103, 103);
+    background-color: rgb(129, 244, 255);
+}
+
+.header-liste{
+    display: flex;
+    justify-content: center;
+    color: rgb(241, 183, 107);
+    list-style-type: none;
+    line-height: 50px;
+    font-size: 25px;    
+}
+
+.liste a{
+    text-decoration: none;
+    color: rgb(241, 183, 107);
+}
+
+
+.liste{
+    cursor: pointer;
+    margin: 0 40px;
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+}
+
+.liste:hover{
+    background-color: rgb(54, 237, 253);
+    transition: 0.5s;
+}
+
+
+
+.liste span{
+    font-size: 14px;
+}
+
+
+/* SOUS-LISTE */
+
+.header-sous-liste{
+    margin-top: -3px;
+    display: none;
+}
+
+.sous-liste {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 10px;
+    background-color: rgb(129, 244, 255);
+    height: 49px;  
+    position: relative; 
+}
+
+
+
+.sous-liste span{
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+}
+
+.sous-liste:hover{
+    background-color: rgb(54, 237, 253);
+    transition: 0.5s;
+}
+
+
+.sous-liste:hover span{
+    display: inline;
+}
+
+.liste:hover > ul{
+    display: block;
+}
+
+/* SOUS-SOUS-LISTE (2) */
+
+.header-sous-liste2{
+    position: relative;
+    top: -50px;
+    left: 190px;
+    background-color: rgb(129, 244, 255);
+    list-style-type: none;
+    display: none;
+}
+
+.sous-liste2{
+    text-align: center;
+    padding: 0 10px;
+    
+    
+} 
+.sous-liste2 a{
+    text-decoration: none;
+    color: rgb(241, 183, 107)
+      
+}
+
+.sous-liste2:hover{
+    background-color: rgb(54, 237, 253);
+    transition: 0.5s;
+    
+}
+
+.liste > ul > .sous-liste:hover > ul{
+    display: block;
+    
+}
+/* fin de la liste */
+/* FIN HEADER */
 main{
-    background-color:#49A8B2 ;
+    background-color: rgb(241, 183, 107) ;
     
 }
 label{
@@ -62,3 +202,32 @@ textarea{
 legend{
     font-size: 40px;
 }
+
+/* footer */
+footer{
+    background:  rgb(129, 244, 255);
+    height:210px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(241, 183, 107);
+    margin-top: auto;
+    line-height: 30px;
+    text-align: center;
+    font-family: "Font Awesome 5 Brands";
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(240, 191, 126);
+    line-height: 30px;
+    font-family: "Font Awesome 5 Brands";
+    font-size: 1.2em;
+}
+
+footer a:hover{
+    color: rgb(238, 170, 81);
+    transition: color 0.4s;
+}
+

@@ -86,6 +86,16 @@
     color: white;
     font-family: cursive;
     text-align: center;
+    animation: h1 2s linear;
+}
+
+@keyframes h1{
+    from{
+        transform: translateX(-1200px);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 
 .header-text-bottom p{
@@ -93,7 +103,22 @@
     text-align: center;
     color: white;
     font-family: cursive;
+    animation: p 4s linear;
 }
+
+@keyframes p{
+    from{
+        transform: translateX(-1200px);
+    }
+    50%{
+        transform: translateX(-1200px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
 
 
 /* SOUS-LISTE */
@@ -230,6 +255,19 @@ main{
     margin-right: 3%;
     margin-left: 3%;
     box-shadow: 0 0 10px rgb(102, 101, 101);
+    animation: bloggers 6s linear;
+}
+
+@keyframes bloggers{
+    from{
+        transform: translateY(-560px);
+    }
+    70%{
+        transform: translateY(-560px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
 
 .bloggers a{
@@ -345,6 +383,33 @@ main{
     padding: 30px 0;
 }
 
+/* footer */
+footer{
+    background: grey;
+    height:210px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    color:#e3ffe7;
+    margin-top: auto;
+    line-height: 30px;
+    text-align: center;
+    font-family: "Font Awesome 5 Brands";
+}
+
+footer a{
+    text-decoration: none;
+    color:#e3ffe7;
+    line-height: 30px;
+    font-family: "Font Awesome 5 Brands";
+    font-size: 1.2em;
+}
+
+footer a:hover{
+    color: rgb(96, 149, 248);
+    transition: color 0.6s;
+}
 
 
 
